@@ -1,58 +1,81 @@
-*, ::before, ::after{
+*{
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+
+}
+
+
+
+
+
+html, body{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    /* height: 100%; */
 }
 
-main {
+header {
+    border-bottom: 8px solid hsl(0deg, 0%, 40%);
+}
+
+h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+    margin: 0;
+    margin-bottom: 3rem;
+}
+
+p{
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+p:last-child {
+    margin-bottom: 0px;
+}
+
+span {
+    color: hsl(160deg, 100%, 30%);
+}
+
+.max-width-wrapper {
+    max-width: 800px;
     margin: 0 auto;
-    min-width: 100%;
+    padding: 0px 24px;
 }
 
-.container-wrapper {
-    padding: 80px 20px;
+.intro-chunk {
+    max-width: 415px;
+    padding-top: 96px;
+    padding-bottom: 64px;
 }
 
-.container-wrapper .first-content{
-    margin: 40px 0px;
-    
-}
 
-/* .first-section {
-    border-bottom: 50px solid black;
-    margin-left: -10px;
-} */
+main{
+    background-color: hsl(0deg, 0%, 40%);
+    padding: 64px 0;
+} 
 
-.container-wrapper p {
-    margin-block-end: 20px;
-    max-width: 300px;
-}
-
-.second-section{
-    border-top: 10px solid bisque;
-    background-color: gray;
-    margin-left: -20px;
-    margin-right: -20px;
-    padding: 20px;
-}
-
-.second-section article {
+.card {
     background-color: white;
-    margin: 40px 0;
-    margin-left: -20px;
-    margin-right: -20px;
-    padding: 20px;
+    padding: 24px;
+    margin: 0 -24px;
+    border-bottom: 8px solid hsl(0deg, 0%, 60%);
 }
 
-.second-section article h1 {
-    background-color: greenyellow;
-    padding: 10px 0px;
-    border-bottom: 10px solid yellow;
-    margin-left: -20px;
-    padding-inline-start: 20px;
-    margin-block-end: 20px;
-    margin-block-start: -10px;
+.indented-heading {
+    width: fit-content;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    margin: 0;
+    padding: 16px 32px;
+    margin-left: -32px;
+    margin-top: -16px;
+    margin-bottom: 1rem;
+    background: hsl(45deg, 100%, 50%);
+    border-bottom: 8px solid hsl(45deg, 100%,40%);
 }
+
 
              
